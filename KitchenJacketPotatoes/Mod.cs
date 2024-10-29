@@ -14,6 +14,7 @@ using KitchenLib.Utils;
 using KitchenMods;
 using TMPro;
 using UnityEngine;
+using KitchenJacketPotatoes.Mains;
 
 namespace KitechenJacketPotatoes;
 
@@ -42,7 +43,13 @@ public class Mod : BaseMod
 
 	private void AddGameData()
 	{
+		LogInfo("Attempting to register game data... Inshallah");
 		//((BaseMod)this).AddGameDataObject<AmericanBreakfastDish>();
+		((BaseMod)this).AddGameDataObject<JacketPotatoesDish>();
+		((BaseMod)this).AddGameDataObject<PlatedJacketPotato>();
+		((BaseMod)this).AddGameDataObject<SlicedButter>();
+		((BaseMod)this).AddGameDataObject<ButterSlice>();
+		LogInfo("Done loading game data. Hopefully?");
 	}
 
 	public static void LogInfo(string _log)

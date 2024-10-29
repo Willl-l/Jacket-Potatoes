@@ -25,4 +25,3 @@ internal class ButterSlice : CustomItem
 
 	public override float SplitSpeed => 1f;
 }
-}
