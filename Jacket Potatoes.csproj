@@ -33,6 +33,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ApplianceLib-Workshop, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\workshop\content\1599600\2934088024\ApplianceLib-Workshop.dll</HintPath>
+    </Reference>
+    <Reference Include="IngredientLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\workshop\content\1599600\2913877103\IngredientLib.dll</HintPath>
+    </Reference>
     <Reference Include="Kitchen.Common">
       <HintPath>..\..\PlateUp_Data\Managed\Kitchen.Common.dll</HintPath>
     </Reference>

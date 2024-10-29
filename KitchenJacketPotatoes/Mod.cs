@@ -60,6 +60,7 @@ public class Mod : BaseMod
 		AddGameData();
 	}
 
+
 	public static void LogInfo(string _log)
 	{
 		Debug.Log("[Jacket Potatoes] " + _log);
