@@ -33,12 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ApplianceLib-Workshop">
-      <HintPath>D:\SteamLibrary\steamapps\workshop\content\1599600\2934088024\ApplianceLib-Workshop.dll</HintPath>
-    </Reference>
-    <Reference Include="IngredientLib">
-      <HintPath>D:\SteamLibrary\steamapps\workshop\content\1599600\2913877103\IngredientLib.dll</HintPath>
-    </Reference>
     <Reference Include="Kitchen.Common">
       <HintPath>..\..\PlateUp_Data\Managed\Kitchen.Common.dll</HintPath>
     </Reference>
@@ -78,18 +72,15 @@
     <Reference Include="Kitchen.TutorialMode">
       <HintPath>..\..\PlateUp_Data\Managed\Kitchen.TutorialMode.dll</HintPath>
     </Reference>
-    <Reference Include="KitchenLib-Workshop">
-      <HintPath>..\..\..\..\..\workshop\content\1599600\2898069883\KitchenLib-Workshop.dll</HintPath>
+    <Reference Include="KitchenLib-Workshop, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\workshop\content\1599600\2898069883\KitchenLib-Workshop.dll</HintPath>
     </Reference>
     <Reference Include="KitchenMode">
       <HintPath>..\..\PlateUp_Data\Managed\KitchenMode.dll</HintPath>
     </Reference>
     <Reference Include="KitchenMods">
       <HintPath>..\..\PlateUp_Data\Managed\KitchenMods.dll</HintPath>
-    </Reference>
-    <Reference Include="Sirenix.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\SteamLibrary\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Sirenix.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

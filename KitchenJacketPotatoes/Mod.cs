@@ -41,6 +41,8 @@ public class Mod : BaseMod
 		LogWarning("Willl.PlateUp.JacketPotatoes v0.0.1 in use!");
 	}
 
+	internal static AssetBundle bundle;
+
 	private void AddGameData()
 	{
 		LogInfo("Attempting to register game data... Inshallah");
@@ -52,8 +54,9 @@ public class Mod : BaseMod
 		LogInfo("Done loading game data. Hopefully?");
 	}
 
-	protected override void OnPostActivate(Mod mod)
-	{
+    protected override void OnPostActivate(KitchenMods.Mod mod)
+    {
+        base.OnPostActivate(mod);
 		AddGameData();
 	}
 
