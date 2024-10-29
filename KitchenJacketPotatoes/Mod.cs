@@ -52,6 +52,11 @@ public class Mod : BaseMod
 		LogInfo("Done loading game data. Hopefully?");
 	}
 
+	protected override void OnPostActivate(Mod mod)
+	{
+		AddGameData();
+	}
+
 	public static void LogInfo(string _log)
 	{
 		Debug.Log("[Jacket Potatoes] " + _log);
