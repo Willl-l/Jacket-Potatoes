@@ -599,3 +599,6 @@ FodyWeavers.xsd
 # End of https://www.toptal.com/developers/gitignore/api/visualstudio,visualstudiocode,windows,vs
 /.vs
 /obj
+obj/Debug/Jacket Potatoes.csproj.AssemblyReference.cache
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+.vs/Jacket Potatoes/v17/.suo
