@@ -56,9 +56,8 @@ public class Mod : BaseMod
 
     protected override void OnPostActivate(KitchenMods.Mod mod)
     {
-        base.OnPostActivate(mod);
 		AddGameData();
-	}
+    }
 
 
 	public static void LogInfo(string _log)
