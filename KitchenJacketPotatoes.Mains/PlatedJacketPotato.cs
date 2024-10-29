@@ -44,8 +44,8 @@ internal class PlatedJacketPotato : CustomItemGroup
 	};
 	public override void OnRegister(GameDataObject gameDataObject)
 	{
-		GameObject child = GameObjectUtils.GetChild(((CustomItem<ItemGroup>)(object)this).Prefab, "Potato");
-		GameObject child2 = GameObjectUtils.GetChild(((CustomItem<ItemGroup>)(object)this).Prefab, "Plate/Plate.001");
+		GameObject child = GameObjectUtils.GetChild(((CustomItem<ItemGroup>)(object)this).Prefab, "Plate/Plate.001");
+		MaterialUtils.ApplyMaterialToChild(child, "Cylinder", new string[2] { "Plate", "Plate - Ring" });
 	}
 }
 
