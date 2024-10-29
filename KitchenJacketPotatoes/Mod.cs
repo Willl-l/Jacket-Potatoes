@@ -45,9 +45,6 @@ public class Mod : BaseMod
 		//((BaseMod)this).AddGameDataObject<AmericanBreakfastDish>();
 	}
 
-
-
-
 	public static void LogInfo(string _log)
 	{
 		Debug.Log("[Jacket Potatoes] " + _log);
