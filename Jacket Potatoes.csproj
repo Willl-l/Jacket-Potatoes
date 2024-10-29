@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF7CA0E8-73CC-48AF-8667-7DDAEB6B8F4A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JacketPotatoes</RootNamespace>
+    <AssemblyName>JacketPotatoes</AssemblyName>
+    <LangVersion>10.0</LangVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ApplianceLib-Workshop">
+      <HintPath>D:\SteamLibrary\steamapps\workshop\content\1599600\2934088024\ApplianceLib-Workshop.dll</HintPath>
+    </Reference>
+    <Reference Include="IngredientLib">
+      <HintPath>D:\SteamLibrary\steamapps\workshop\content\1599600\2913877103\IngredientLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Common">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.FranchiseBuilderMode">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.FranchiseBuilderMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.FranchiseMode">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.FranchiseMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.GameData">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.GameData.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Layouts">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.Layouts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.MessagePack">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.MessagePack.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.MessagePack.Generated">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.MessagePack.Generated.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Networking">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.Persistence">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.Persistence.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.PostgameMode">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.PostgameMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.ResearchMode">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.ResearchMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.RestaurantMode">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.RestaurantMode.dll</HintPath>
+    </Reference>
+    <Reference Include="Kitchen.TutorialMode">
+      <HintPath>..\..\PlateUp_Data\Managed\Kitchen.TutorialMode.dll</HintPath>
+    </Reference>
+    <Reference Include="KitchenLib-Workshop">
+      <HintPath>..\..\..\..\..\workshop\content\1599600\2898069883\KitchenLib-Workshop.dll</HintPath>
+    </Reference>
+    <Reference Include="KitchenMode">
+      <HintPath>..\..\PlateUp_Data\Managed\KitchenMode.dll</HintPath>
+    </Reference>
+    <Reference Include="KitchenMods">
+      <HintPath>..\..\PlateUp_Data\Managed\KitchenMods.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Entities">
+      <HintPath>..\..\PlateUp_Data\Managed\Unity.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\PlateUp_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\PlateUp_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\PlateUp_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\PlateUp_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="KitchenJacketPotatoes.Mains\ButterSlice.cs" />
+    <Compile Include="KitchenJacketPotatoes.Mains\SlicedButter.cs" />
+    <Compile Include="KitchenJacketPotatoes\Refs.cs" />
+    <Compile Include="KitchenJacketPotatoes\Mod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
