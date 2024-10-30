@@ -35,7 +35,7 @@ namespace KitchenJacketPotatoes.Mains
     {
         new Dish.MenuItem
         {
-            Item = Refs.PlatedJacketPotato,
+            Item = Refs.ButterSlice,
             Phase = MenuPhase.Main,
             Weight = 1f,
         }

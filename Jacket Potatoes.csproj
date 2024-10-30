@@ -120,7 +120,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KitchenJacketPotatoes.Mains\ButterSlice.cs" />
-    <Compile Include="KitchenJacketPotatoes.Mains\PlatedJacketPotato.cs" />
     <Compile Include="KitchenJacketPotatoes.Mains\JacketPotatoesDish.cs" />
     <Compile Include="KitchenJacketPotatoes.Mains\SlicedButter.cs" />
     <Compile Include="KitchenJacketPotatoes\Refs.cs" />

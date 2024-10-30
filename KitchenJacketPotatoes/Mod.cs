@@ -48,9 +48,8 @@ public class Mod : BaseMod
 		LogInfo("Attempting to register game data... Inshallah");
 		//((BaseMod)this).AddGameDataObject<AmericanBreakfastDish>();
 		((BaseMod)this).AddGameDataObject<JacketPotatoesDish>();
-		((BaseMod)this).AddGameDataObject<PlatedJacketPotato>();
 		((BaseMod)this).AddGameDataObject<SlicedButter>();
-		((BaseMod)this).AddGameDataObject<ButterSlice>();
+		//((BaseMod)this).AddGameDataObject<ButterSlice>();
 		LogInfo("Done loading game data. Hopefully?");
 	}
 
