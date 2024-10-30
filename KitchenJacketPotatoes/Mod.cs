@@ -16,7 +16,7 @@ using TMPro;
 using UnityEngine;
 using KitchenJacketPotatoes.Mains;
 
-namespace KitechenJacketPotatoes;
+namespace KitchenJacketPotatoes;
 
 public class Mod : BaseMod
 {
@@ -31,6 +31,8 @@ public class Mod : BaseMod
 	public const string MOD_GAMEVERSION = ">=1.0.0";
 
 	public const bool DEBUG_MODE = false;
+
+	internal static AssetBundle Bundle;
 
 	public Mod() : base(MOD_GUID, MOD_NAME, MOD_AUTHOR, MOD_VERSION, MOD_GAMEVERSION, Assembly.GetExecutingAssembly())
 	{
@@ -48,13 +50,15 @@ public class Mod : BaseMod
 		LogInfo("Attempting to register game data... Inshallah");
 		//((BaseMod)this).AddGameDataObject<AmericanBreakfastDish>();
 		((BaseMod)this).AddGameDataObject<JacketPotatoesDish>();
-		((BaseMod)this).AddGameDataObject<SlicedButter>();
+		//((BaseMod)this).AddGameDataObject<SlicedButter>();
 		//((BaseMod)this).AddGameDataObject<ButterSlice>();
 		LogInfo("Done loading game data. Hopefully?");
 	}
 
     protected override void OnPostActivate(KitchenMods.Mod mod)
     {
+		Bundle = mod.GetPacks<AssetBundleModPack>().SelectMany(e => e.AssetBundles).FirstOrDefault();
+
 		AddGameData();
     }
 

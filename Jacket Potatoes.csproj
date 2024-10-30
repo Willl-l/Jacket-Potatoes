@@ -119,9 +119,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KitchenJacketPotatoes.Mains\ButterSlice.cs" />
+    <Compile Include="KitchenJacketPotatoes.Mains\BakingPotato.cs" />
+    <Compile Include="KitchenJacketPotatoes.Mains\BakingPotatoProvider.cs" />
     <Compile Include="KitchenJacketPotatoes.Mains\JacketPotatoesDish.cs" />
-    <Compile Include="KitchenJacketPotatoes.Mains\SlicedButter.cs" />
     <Compile Include="KitchenJacketPotatoes\Refs.cs" />
     <Compile Include="KitchenJacketPotatoes\Mod.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

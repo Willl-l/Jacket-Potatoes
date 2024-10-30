@@ -18,10 +18,6 @@ internal class Refs
 
 	public static Item DirtyPlate => Find<Item>(ItemReferences.PlateDirty);
 
-	public static Item Butter => Find<Item>(ItemReferences.Butter);
-
-	public static Item Potato => Find<Item>(ItemReferences.Potato);
-
 	public static Process Cook => Find<Process>(ProcessReferences.Cook);
 
 	public static Process Chop => Find<Process>(ProcessReferences.Chop);
@@ -30,9 +26,7 @@ internal class Refs
 
 	public static Process Oven => Find<Process>(ProcessReferences.RequireOven);
 
-	public static Item SlicedButter => Find<Item>(References.GetIngredient("Sliced Butter"));
-	public static Item ButterSlice => Find<Item>(References.GetIngredient("Butter Slice"));
-	public static Item PlatedJacketPotato => Find<Item>(References.GetIngredient("PlatedJacketPotato"));
+	public static Item BakingPotato => Find<Item>(References.GetIngredient("BakingPotato"));
 
 	internal static T Find<T>(int id) where T : GameDataObject
 	{

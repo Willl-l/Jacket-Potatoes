@@ -32,32 +32,31 @@ namespace KitchenJacketPotatoes.Mains
         public override List<string> StartingNameSet => new List<string> { "Spud Bros", "Spud Man", "Tater Town", "Hot Potatoe" };
 
         public override List<Dish.MenuItem> ResultingMenuItems => new List<Dish.MenuItem>
-    {
-        new Dish.MenuItem
         {
-            Item = Refs.ButterSlice,
-            Phase = MenuPhase.Main,
-            Weight = 1f,
-        }
-    };
+            new Dish.MenuItem
+            {
+                Item = Refs.BakingPotato,
+                Phase = MenuPhase.Main,
+                Weight = 1f,
+            }
+        };
 
         public override HashSet<Item> MinimumIngredients => new HashSet<Item>
-    {
-        Refs.Butter,
-        Refs.Potato,
-    };
+        {
+            Refs.BakingPotato,
+        };
 
         public override HashSet<Process> RequiredProcesses => new HashSet<Process>
-    {
-        Refs.Oven,
-        Refs.Chop
-    };
+        {
+            Refs.Oven,
+            Refs.Chop
+        };
 
         public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string> {
-    {
-        Locale.English,
-        "Cook Potato, Slice Butter, portion and add to potato. Then add other toppings"
-    } };
+        {
+            Locale.English,
+            "Cook Potato, Slice Butter, portion and add to potato. Then add other toppings"
+        } };
 
 
 
