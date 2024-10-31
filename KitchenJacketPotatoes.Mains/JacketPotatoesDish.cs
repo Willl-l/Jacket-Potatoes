@@ -17,6 +17,7 @@ namespace KitchenJacketPotatoes.Mains
         public override CardType CardType => CardType.Default;
 
         public override Unlock.RewardLevel ExpReward => Unlock.RewardLevel.Large;
+
         public override UnlockGroup UnlockGroup => UnlockGroup.Dish;
 
         public override bool IsSpecificFranchiseTier => false;
@@ -35,9 +36,10 @@ namespace KitchenJacketPotatoes.Mains
         {
             new Dish.MenuItem
             {
+                //placeholder
                 Item = Refs.BakingPotato,
                 Phase = MenuPhase.Main,
-                Weight = 1f,
+                Weight = 1,
             }
         };
 
@@ -52,13 +54,16 @@ namespace KitchenJacketPotatoes.Mains
             Refs.Chop
         };
 
-        public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string> {
+        public override Dictionary<Locale, string> Recipe => new Dictionary<Locale, string>
         {
-            Locale.English,
-            "Cook Potato, Slice Butter, portion and add to potato. Then add other toppings"
-        } };
+            {Locale.English, "Cook Potato, Slice Butter, portion and add to potato. Then add other toppings"}
+        };
 
+        public override GameObject IconPrefab => Mod.Bundle.LoadAsset<GameObject>("Jacket Potato Dish Icon").AssignMaterialsByNames();
 
+        public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)> {
+            (Locale.English, LocalisationUtils.CreateUnlockInfo("Jacket Potato", "Adds Jacket Potato as a main", (string)null))
+        };
 
     }
 }

@@ -18,6 +18,8 @@ internal class Refs
 
 	public static Item DirtyPlate => Find<Item>(ItemReferences.PlateDirty);
 
+	public static Item Tomato => Find<Item>(ItemReferences.Tomato);
+
 	public static Process Cook => Find<Process>(ProcessReferences.Cook);
 
 	public static Process Chop => Find<Process>(ProcessReferences.Chop);
