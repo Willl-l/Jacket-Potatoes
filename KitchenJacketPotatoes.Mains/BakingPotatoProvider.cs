@@ -39,9 +39,5 @@ internal class BakingPotatoProvider : CustomAppliance
     {
         base.OnRegister(gameDataObject);
 
-        // AnimationSoundSource - This is used to play a sound when the Appliance is interacted with
-
-
-        // ItemSourceView - This is used to display the Item provided by the Appliance, and trigger the Animation on interaction.
     }
 }

@@ -6,7 +6,7 @@ using KitchenLib.Utils;
 using UnityEngine;
 
 namespace KitchenJacketPotatoes.Mains;
-
+/*
 internal class FoilTable : CustomAppliance
 {
     public override string UniqueNameID => "Foil Table";
@@ -20,3 +20,4 @@ internal class FoilTable : CustomAppliance
     public override bool IsPurchasable => true;
 
 }
+*/

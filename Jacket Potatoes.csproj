@@ -108,6 +108,10 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>..\..\PlateUp_Data\Managed\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\SteamLibrary\steamapps\common\PlateUp\PlateUp\PlateUp_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
       <HintPath>..\..\PlateUp_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>

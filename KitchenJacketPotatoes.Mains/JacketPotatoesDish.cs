@@ -45,7 +45,7 @@ namespace KitchenJacketPotatoes.Mains
 
         public override HashSet<Item> MinimumIngredients => new HashSet<Item>
         {
-            Refs.BakingPotato,
+            (Item)GDOUtils.GetCustomGameDataObject<BakingPotato>().GameDataObject,
         };
 
         public override HashSet<Process> RequiredProcesses => new HashSet<Process>
@@ -64,6 +64,13 @@ namespace KitchenJacketPotatoes.Mains
         public override List<(Locale, UnlockInfo)> InfoList => new List<(Locale, UnlockInfo)> {
             (Locale.English, LocalisationUtils.CreateUnlockInfo("Jacket Potato", "Adds Jacket Potato as a main", (string)null))
         };
+
+        public override void OnRegister(GameDataObject gameDataObject)
+        {
+            GameObject child = GameObjectUtils.GetChild(((CustomDish)this).DisplayPrefab, "Plated Potato");
+            MaterialUtils.ApplyMaterialToChild(child, "Potato", new string[1] { "Raw Potato - Skin" });
+            //MaterialUtils.ApplyMaterialToChild(child, "Cylinder", new string[2] { "Plate", "Plate - Ring" });
+        }
 
     }
 }
